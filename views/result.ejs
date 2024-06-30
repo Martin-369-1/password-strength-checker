@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body class="text-cente container">
+        <div>
+            <form action="/check " method="post" class="text-center">
+                <label for="" class="d-block h5 text-info " id="password">
+                    <h2>Enter a password to check</h2>
+                </label>
+                <input type="text" placeholder="Your password" class="text-center btn btn-outline-warning py-3"
+                    name="password" id="password">
+                <button type="submit" class=" btn btn-outline-warning py-3">Check</button>
+            </form>
+        </div>
+
+
+        <div class="d-flex  justify-content-center mt-5 content">
+            <p class="text-white h2">The password you entered is <%=passwordstrength %></p>
+
+        </div>
+    </body>
+
+</html>
